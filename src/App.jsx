@@ -1,20 +1,14 @@
-// import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useNavigate,
-} from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import FormSubmitted from "./pages/FormSubmitted";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+// import FormSubmitted from "./pages/FormSubmitted";
+// import PageOne from "./pages/Page1";
+// import PageTwo from "./pages/Page2";
+// import PageThree from "./pages/Page3";
 // import PostPage from "./pages/PostPage";
-import PageOne from "./pages/Page1";
-import PageTwo from "./pages/Page2";
-import PageThree from "./pages/Page3";
+import * as Pages from "./pages";
 
 export default function App() {
   return (
@@ -47,14 +41,14 @@ export default function App() {
           </nav>
         </div>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/form-submitted" element={<FormSubmitted />} />
+          <Route path="/" element={<Pages.Home />} />
+          <Route path="/About" element={<Pages.About />} />
+          <Route path="/Contact" element={<Pages.Contact />} />
+          <Route path="/form-submitted" element={<Pages.FormSubmitted />} />
           {/* <Route path="/posts/:_id" element={<PostPage />} /> */}
-          <Route path="/Page1" element={<PageOne />} />
-          <Route path="/Page2" element={<PageTwo />} />
-          <Route path="/Page3" element={<PageThree />} />
+          <Route path="/Page1" element={<Pages.PageOne />} />
+          <Route path="/Page2" element={<Pages.PageTwo />} />
+          <Route path="/Page3" element={<Pages.PageThree />} />
         </Routes>
       </Router>
     </>

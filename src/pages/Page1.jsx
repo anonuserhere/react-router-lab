@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function PageOne() {
+export function PageOne() {
   const navigate = useNavigate();
 
   function gotoPageTwo() {

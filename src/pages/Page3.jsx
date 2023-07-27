@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-export default function PageThree() {
+
+export function PageThree() {
   const navigate = useNavigate();
 
   return (

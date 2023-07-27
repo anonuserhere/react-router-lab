@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function PageTwo() {
+export function PageTwo() {
   const navigate = useNavigate();
   return (
     <React.Fragment>
