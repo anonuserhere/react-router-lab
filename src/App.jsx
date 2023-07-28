@@ -37,6 +37,10 @@ export default function App() {
                 <Link to="/Page1" className="nav-link"></Link>
                 Page1
               </li>
+              <li className="nav-item">
+                <Link to="/PostPage" className="nav-link"></Link>
+                Post Page
+              </li>
             </ul>
           </nav>
         </div>
@@ -45,7 +49,7 @@ export default function App() {
           <Route path="/About" element={<Pages.About />} />
           <Route path="/Contact" element={<Pages.Contact />} />
           <Route path="/form-submitted" element={<Pages.FormSubmitted />} />
-          {/* <Route path="/posts/:_id" element={<PostPage />} /> */}
+          <Route path="/posts/:_id" element={<Pages.PostPage />} />
           <Route path="/Page1" element={<Pages.PageOne />} />
           <Route path="/Page2" element={<Pages.PageTwo />} />
           <Route path="/Page3" element={<Pages.PageThree />} />
